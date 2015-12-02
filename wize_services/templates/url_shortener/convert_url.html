@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load bootstrap3 %}
+{% load i18n %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h1>{% trans "Create short Url" %}</h1>
+            <form action="{% url 'url_shortener:convert_url' %}" method="post">
+                {% csrf_token %}
+                {% bootstrap_form form %}
+                {% buttons %}
+                    <button type="submit" class="btn btn-success">{% trans "Convert" %}</button>
+                {% endbuttons %}
+            </form>
+        </div><!-- col-md -->
+    </div><!-- row -->
+</div><!-- container -->
+
+{% endblock %}

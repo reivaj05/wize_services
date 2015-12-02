@@ -15,7 +15,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 PROJECT_APPS = (
     'common',
-    'bootstrap3'
+    'bootstrap3',
+    'url_shortener',
 )
 
 DJANGO_APPS = (

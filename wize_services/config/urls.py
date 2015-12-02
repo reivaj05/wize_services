@@ -8,4 +8,5 @@ urlpatterns = patterns(
     # url(r'^blog/', include('blog.urls')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^', include('common.urls', namespace='common')),
+    url(r'^', include('url_shortener.urls', namespace='url_shortener')),
 )

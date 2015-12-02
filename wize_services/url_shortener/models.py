@@ -6,12 +6,12 @@ from django.utils.translation import ugettext_lazy as _
 
 class UrlShort(models.Model):
 
-    long_url = models.CharField(
+    long_url = models.URLField(
         _('Long url'),
         max_length=200,
         help_text=_('Insert Url to convert')
     )
-    short_url = models.CharField(
+    short_url = models.URLField(
         _('Short url'),
         max_length=200,
         help_text=_('Insert Url to convert')
