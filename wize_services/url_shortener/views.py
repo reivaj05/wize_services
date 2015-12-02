@@ -44,8 +44,10 @@ class UrlListView(ListView):
 
     def get_queryset(self):
         return UrlShort.objects.all()
+from django.http import HttpResponseRedirect
 
 class UrlRedirectShortUrl(RedirectView):
 
     def get_redirect_url(self, *args, **kwargs):
-        pass
+        url = UrlShort.objects.get(id=kwargs['url_id'])
+        return HttpResponseRedirect(str(url.long_url))

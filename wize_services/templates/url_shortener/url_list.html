@@ -8,7 +8,7 @@
             <li class="list-group-item">
                 <strong>{{ url.long_url }}</strong>
                 <br/>
-                <a href="{% url 'url_shortener:redirect_short_url' url.short_url %}">
+                <a href="{{ url.long_url }}">
                     {{ url.short_url }}
                 </a>
             </li>
