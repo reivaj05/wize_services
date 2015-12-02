@@ -11,7 +11,7 @@ class UrlShort(models.Model):
         max_length=200,
         help_text=_('Insert Url to convert')
     )
-    short_url = models.URLField(
+    short_url = models.CharField(
         _('Short url'),
         max_length=200,
         help_text=_('Insert Url to convert')
