@@ -1,0 +1,25 @@
+{% load i18n %}
+<div id="navigation-bar" class="container">
+    <div class="navbar navbar-inverse" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button><!-- navbar-toggle -->
+            <a class="navbar-brand" href="{% url 'common:index' %}">Url Shortener</a>
+        </div><!-- navbar-header -->
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="{% url 'common:index' %}">{% trans "Home" %}</a>
+                </li>
+            </ul><!-- navbar-nav -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                
+            </ul><!-- navbar-nav -->
+        </div><!-- nav-collapse -->
+    </div><!-- navbar -->
+</div><!-- container -->
